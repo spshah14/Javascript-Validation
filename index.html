@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Javascript Validataion</title>
+</head>
+
+<body>
+
+
+    <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+        <strong>Success!</strong> Your form is successfully submitted...!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+        <strong>Error!</strong> Your form is not submitted due to invalid input...!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <h1 style="text-align: center; color: #fffad6; font-family: 'Times New Roman', Times, serifs;"><u>Form</u>
+    </h1>
+
+    <div class="container">
+
+        <form name="myform">
+            <div>
+                <label for="uname" class="form-label">User Name</label>
+                <input type="text" id="uname" class="form-control">
+                <div id="unameHelp" class="form-text red">
+                    Your name must be 2-10 characters long and must not contain special characters, white spaces or
+                    emoji.
+                </div>
+                <br>
+
+                <div>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                    <div id="emailHelp" class="form-text red">Your email must be a valid email</div>
+                </div>
+
+                <br>
+
+                <label for="mobile" class="form-label">Mobile No.</label>
+                <input type="tel" id="mobile" class="form-control">
+                <div id="mobileHelp" class="form-text red">
+                    Your mobile number must be 10 digit long
+                </div>
+
+                <br>
+
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" class="form-control">
+                <div id="nameHelp" class="form-text red">
+                    Enter the valid name
+                </div>
+                <br>
+
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" class="form-control">
+                <div id="passwordHelp" class="form-text red">
+                    Your password must be 8-20 characters long, contain letters and numbers and @, and must not contain
+                    spaces, other special characters, or emoji.
+                </div>
+                <br>
+
+                <label for="cpassword" class="form-label">Confirm Password</label>
+                <input type="password" id="cpassword" class="form-control">
+                <div id="cpasswordHelp" class="form-text red">
+                    Please enter the same password
+                </div>
+                <br>
+
+                <button id="submit" type="submit" value="SUBMIT" class="btn btn-primary">SUBMIT</button>
+
+            </div>
+        </form>
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
